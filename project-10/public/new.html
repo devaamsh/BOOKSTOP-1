@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <style>
+        body{
+            background-color: #FFA447;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+        }
+        .one{
+            height: 690px;
+            width: 600px;
+            padding: 12px;
+            border-radius: 70px;
+        }
+        .two{
+            margin-left: 20px;
+            margin-top: 90px;
+            display: flex;
+            background-color: white;
+            height: 550px;
+            width: 530px;
+            border-radius: 50px;
+            flex-direction: column;
+        }
+        h1{
+            margin-top: 15px;
+            margin-left: 175px;
+            color: #FFA447;
+        }
+        h2{
+            margin-left: 210px;
+            color: #FFA447;
+        }
+        .three{
+            height: 30px;
+            width: 340px;
+            margin-left: 70px;
+            margin-top: 60px;
+            background-color: #FFA447;
+            color: white;
+            border-radius: 20px;
+            border-color: #FFA447;
+            font-size: 15px;
+        }
+        .four{
+            height: 30px;
+            width: 340px;
+            margin-left: 70px;
+            margin-top: 60px;
+            background-color: #FFA447;
+            color: white;
+            border-radius: 20px;
+            border-color: #FFA447;
+            font-size: 15px;
+        }
+        .five{
+            margin-top: 60px;
+            height: 35px;
+            width: 150px;
+            margin-left: 170px;
+            color: #FFA447;
+            background-color: white;
+            border-color: #FFA447;
+            border-radius: 20px;
+            font-size: 18px;
+        }
+        .five:hover{
+            background-color: #FFA447;
+            color: white;
+            border-color: white;
+        }
+        ::placeholder{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="./images/Screenshot 2024-02-07 174901.png" class="one">
+        <div class="two">
+            <h1>BOOKSTOP</h1>
+            <h2>NEW USER</h2>
+            <form action="/ok" method="post">
+            <input type="text" placeholder="Enter New Username" name="username"  class="three">
+            <input type="text" placeholder="Enter New Password" name="password" class="four">
+            <input type="submit" value="SUBMIT" class="five">
+        </form>
+        </div>
+    </div>
+</body>
+</html>

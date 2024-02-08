@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOKSTOP</title>
+    <style>
+        body{
+            display: flex;
+            background-image: url(./images/pattern_circles-12_1_2_0-0_0_1__ffffff_805ad5_e91e63.png);
+                }
+        .container{
+            height: 1000vh;
+            width:500px;
+            background-color: white;
+            margin-left: 350px;
+            display: flex;
+            flex-direction: column;
+            overflow: scroll;
+        }
+        h1{
+            margin-left: 160px;
+        }
+        h2{
+            margin-left: 200px;
+        }
+        .desc{
+            height:600px;
+            width: 400px;
+            margin-left: 50px;
+            overflow: scroll;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>BOOKSTOP</h1>
+        <% for(i=0;i<books.rows.length-1;i++){ %>
+        <h2><%= books.rows[i].title %></h2>
+        <div class="desc">
+            <p><%= books.rows[i].description %></p>
+        </div>
+        <% } %>
+        <form action="/post" method="get">
+        <input type="submit" value="New Book">
+        </form>
+    </div>
+</body>
+</html>

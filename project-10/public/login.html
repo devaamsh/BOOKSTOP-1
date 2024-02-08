@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <style>
+        body{
+            background-color: #FFA447;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+        }
+        .one{
+            height: 690px;
+            width: 600px;
+            padding: 12px;
+            border-radius: 70px;
+            filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.5));
+        }
+        .two{
+            margin-left: 20px;
+            margin-top: 90px;
+            display: flex;
+            background-color: white;
+            height: 550px;
+            width: 530px;
+            border-radius: 50px;
+            flex-direction: column;
+            filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.5));
+        }
+        h1{
+            margin-top: 15px;
+            margin-left: 175px;
+            color: #FFA447;
+        }
+        h2{
+            margin-left: 210px;
+            color: #FFA447;
+        }
+        .three{
+            height: 30px;
+            width: 340px;
+            margin-left: 70px;
+            margin-top: 60px;
+            background-color: #FFA447;
+            color: white;
+            border-radius: 20px;
+            border-color: #FFA447;
+            font-size: 15px;
+            filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.5));
+        }
+        .four{
+            height: 30px;
+            width: 340px;
+            margin-left: 70px;
+            margin-top: 60px;
+            background-color: #FFA447;
+            color: white;
+            border-radius: 20px;
+            border-color: #FFA447;
+            font-size: 15px;
+            filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.5));
+        }
+        .five{
+            margin-top: 60px;
+            height: 35px;
+            width: 150px;
+            margin-left: 170px;
+            color: #FFA447;
+            background-color: white;
+            border-color: #FFA447;
+            border-radius: 20px;
+            font-size: 18px;
+            filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.5));
+        }
+        .five:hover{
+            background-color: #FFA447;
+            color: white;
+            border-color: white;
+        }
+        ::placeholder{
+            color: white;
+        }
+        .six{
+            margin-top: 30px;
+            margin-left: 200px;
+            color: lightblue;
+            font-size: 20px;
+            filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.5));
+        }
+        .new{
+            margin-top: 40px;
+            margin-left:200px;
+            height: 37px;
+            width: 100px;
+            font-size: 19px;
+            background-color: #FFA447;
+            color: white;
+            border-radius: 25px;
+            border-color: white;
+            filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.5));
+        }
+        .new:hover{
+            background-color: white;
+            color: #FFA447;
+            border-color: #FFA447;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="./images/Screenshot 2024-02-07 174901.png" class="one">
+        <div class="two">
+            <h1>BOOKSTOP</h1>
+            <h2>LOGIN</h2>
+            <form action="/submit" method="post">
+            <input type="text" placeholder="Username" name="username"  class="three">
+            <input type="password" placeholder="Password" name="password" class="four">
+            <input type="submit" value="SUBMIT" class="five">
+        </form>
+        <form action="/new" method="get">
+            <input type="submit" value="New User" class="new">
+        </form>
+        </div>
+    </div>
+</body>
+</html>
